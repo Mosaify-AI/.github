@@ -25,6 +25,10 @@ Mosaify is being built for the full creative loop—not a single model or one-of
 - **One connected system.** Web, API, CLI, and agent-facing tools should share the same product truth.
 - **Infrastructure should earn trust.** Reliability, privacy, and clear operational ownership are part of the product.
 
+## Handbook
+
+Our [public handbook](../handbook/README.md) records Mosaify's product thesis, system boundaries, operational principles, and decision process.
+
 ## Contact
 
 Questions about Mosaify? Reach us at [admin@mosaify.ai](mailto:admin@mosaify.ai).
