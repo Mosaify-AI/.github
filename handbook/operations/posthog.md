@@ -8,8 +8,8 @@ The integration is rollout-gated. A configured account, installed package, or me
 
 ## Ownership boundary
 
-- `mosaic-web` owns consent presentation, browser-local consent state, lazy SDK initialization, replay gating, route normalization, and browser event sanitization.
-- `mosaic-api` owns authoritative generation and credit-purchase lifecycle events and validates current consent before capture.
+- `mosaify-web` owns consent presentation, browser-local consent state, lazy SDK initialization, replay gating, route normalization, and browser event sanitization.
+- `mosaify-api` owns authoritative generation and credit-purchase lifecycle events and validates current consent before capture.
 - Analytics transport failures are non-fatal to product behavior.
 - Unknown events or unsafe properties must be rejected before transport.
 

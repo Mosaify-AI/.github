@@ -1,14 +1,14 @@
 # System map
 
-Mosaify is coordinated from `mosaic-workspace`, but each product repository has its own history and release lifecycle.
+Mosaify is coordinated from `mosaify-workspace`, but each product repository has its own history and release lifecycle.
 
 ```mermaid
 flowchart TB
-    Workspace["mosaic-workspace<br/>coordination"]
-    Web["mosaic-web<br/>browser product"]
-    API["mosaic-api<br/>server authority"]
-    CLI["mosaic-cli<br/>local generation client"]
-    MCP["mosaic-mcp<br/>agent-facing tools"]
+    Workspace["mosaify-workspace<br/>coordination"]
+    Web["mosaify-web<br/>browser product"]
+    API["mosaify-api<br/>server authority"]
+    CLI["mosaify-cli<br/>local generation client"]
+    MCP["mosaify-mcp<br/>agent-facing tools"]
     DB[("PostgreSQL")]
     Media["Durable media storage"]
     Provider["Generation providers"]
@@ -36,11 +36,11 @@ flowchart TB
 
 | Repository | Owns | Does not silently own |
 | --- | --- | --- |
-| `mosaic-workspace` | Cross-repository conventions, bootstrap, local orchestration, and shared agent workflows | Product implementation or child-repository releases |
-| `mosaic-web` | Browser presentation, user interaction, consent UI, and client-side telemetry gating | Billing truth, provider credentials, or authoritative render outcomes |
-| `mosaic-api` | Authentication, authorization, persistence, generation orchestration, billing truth, and authoritative lifecycle events | Browser interaction or client-only presentation state |
-| `mosaic-cli` | Local client workflows | Web product state or API database ownership |
-| `mosaic-mcp` | Provider-agnostic agent tools and contracts | Private server state unless explicitly integrated |
+| `mosaify-workspace` | Cross-repository conventions, bootstrap, local orchestration, and shared agent workflows | Product implementation or child-repository releases |
+| `mosaify-web` | Browser presentation, user interaction, consent UI, and client-side telemetry gating | Billing truth, provider credentials, or authoritative render outcomes |
+| `mosaify-api` | Authentication, authorization, persistence, generation orchestration, billing truth, and authoritative lifecycle events | Browser interaction or client-only presentation state |
+| `mosaify-cli` | Local client workflows | Web product state or API database ownership |
+| `mosaify-mcp` | Provider-agnostic agent tools and contracts | Private server state unless explicitly integrated |
 
 ## Cross-repository change rule
 
