@@ -9,10 +9,12 @@ flowchart TB
     API["mosaify-api<br/>server authority"]
     CLI["mosaify-cli<br/>local generation client"]
     MCP["mosaify-mcp<br/>agent-facing tools"]
+    Ava["Ava<br/>archived reference"]
     DB[("PostgreSQL")]
     Media["Durable media storage"]
-    Provider["Generation providers"]
-    Billing["Billing provider"]
+    Provider["OpenAI / fal / BytePlus"]
+    Billing["Stripe"]
+    Identity["Google / Apple / SMTP"]
     Analytics["Consented analytics"]
     Errors["Error monitoring"]
 
@@ -20,12 +22,14 @@ flowchart TB
     Workspace -. "coordinates" .-> API
     Workspace -. "coordinates" .-> CLI
     Workspace -. "coordinates" .-> MCP
+    Workspace -. "retains" .-> Ava
     Web --> API
     API --> DB
     API --> Media
     API --> Provider
     CLI --> Provider
     API --> Billing
+    API --> Identity
     Web -. "after consent" .-> Analytics
     API -. "after valid consent" .-> Analytics
     Web -. "minimized errors" .-> Errors
@@ -41,6 +45,9 @@ flowchart TB
 | `mosaify-api` | Authentication, authorization, persistence, generation orchestration, billing truth, and authoritative lifecycle events | Browser interaction or client-only presentation state |
 | `mosaify-cli` | Local client workflows | Web product state or API database ownership |
 | `mosaify-mcp` | Provider-agnostic agent tools and contracts | Private server state unless explicitly integrated |
+| `Ava` | Archived reference implementation for agent-run contracts | Active product delivery or provider execution |
+
+`mosaify-mcp` is currently a runnable stdio capability-discovery scaffold. Its API adapter is planned, not active. No production hosting vendor is established by the checked-in repositories.
 
 ## Cross-repository change rule
 
