@@ -1,6 +1,5 @@
 <div align="center">
-  <img src="https://avatars.githubusercontent.com/u/305066738?s=200&v=4" width="96" alt="Mosaify logo" />
-
+<img width="220" alt="Mosaify" src="https://github.com/user-attachments/assets/aba6486e-4c9e-4e84-be02-d9e7b3e50233" />
   <h1>Mosaify</h1>
 
   <p><strong>A general-purpose AI video generation platform.</strong></p>
