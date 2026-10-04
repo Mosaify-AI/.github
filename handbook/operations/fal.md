@@ -4,7 +4,7 @@
 
 fal provides execution for supported image and video generation paths. Mosaify owns the user contract, job state, persistence, and durable result delivery; fal owns provider execution.
 
-The integration is active in `mosaify-api` and the local `mosaify-cli`. The browser must never call fal directly. Current production account, model enablement, provider retention, and alert configuration are unconfirmed.
+The integration is active in `mosaify-studio/apps/api` and the local `mosaify-cli`. The browser must never call fal directly. Current production account, model enablement, provider retention, and alert configuration are unconfirmed.
 
 ## Credential boundary
 

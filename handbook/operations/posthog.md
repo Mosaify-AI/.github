@@ -10,8 +10,8 @@ Current repository evidence places the API and web implementation on coordinated
 
 ## Ownership boundary
 
-- `mosaify-web` owns consent presentation, browser-local consent state, lazy SDK initialization, replay gating, route normalization, and browser event sanitization.
-- `mosaify-api` owns authoritative generation and credit-purchase lifecycle events and validates current consent before capture.
+- `mosaify-studio/apps/web` owns consent presentation, browser-local consent state, lazy SDK initialization, replay gating, route normalization, and browser event sanitization.
+- `mosaify-studio/apps/api` owns authoritative generation and credit-purchase lifecycle events and validates current consent before capture.
 - Analytics transport failures are non-fatal to product behavior.
 - Unknown events or unsafe properties must be rejected before transport.
 
@@ -33,7 +33,7 @@ If prohibited data is observed, disable the affected capture path immediately, p
 
 ## Configuration
 
-`mosaify-web` uses `VITE_POSTHOG_PROJECT_TOKEN` and `VITE_POSTHOG_HOST`. `mosaify-api` uses `POSTHOG_PROJECT_TOKEN` and `POSTHOG_HOST`. These identifiers may be documented, but values, account names, project names, and dashboard URLs must not be published.
+`mosaify-studio/apps/web` uses `VITE_POSTHOG_PROJECT_TOKEN` and `VITE_POSTHOG_HOST`. `mosaify-studio/apps/api` uses `POSTHOG_PROJECT_TOKEN` and `POSTHOG_HOST`. These identifiers may be documented, but values, account names, project names, and dashboard URLs must not be published.
 
 ## Retention, rollout, and rollback
 

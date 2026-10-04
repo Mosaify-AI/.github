@@ -2,7 +2,7 @@
 
 ## Role and current state
 
-`mosaify-api` actively uses PostgreSQL for authoritative relational state and an S3-compatible adapter for durable media. The production vendors, regions, backup systems, and configured retention policies are not established by public repository evidence.
+`mosaify-studio/apps/api` actively uses PostgreSQL for authoritative relational state and an S3-compatible adapter for durable media. The production vendors, regions, backup systems, and configured retention policies are not established by public repository evidence.
 
 `mosaify-workspace` runs PostgreSQL 16 and MinIO locally through Docker Compose. MinIO is development-only and must not be described as the production storage provider.
 

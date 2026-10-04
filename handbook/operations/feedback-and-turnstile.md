@@ -4,7 +4,7 @@
 
 Public contact, authenticated contextual reports, PostgreSQL-backed rate limiting, and Cloudflare Turnstile verification are adoption-in-progress. They exist on coordinated open API/web branches and are not established as production-enabled.
 
-`mosaify-web` owns the form, accessibility, challenge widget, and user intent. `mosaify-api` owns validation, trusted proxy handling, rate limits, Turnstile verification, persistence, and optional email notification. A report must be persisted before notification; notification failure must not erase accepted feedback.
+`mosaify-studio/apps/web` owns the form, accessibility, challenge widget, and user intent. `mosaify-studio/apps/api` owns validation, trusted proxy handling, rate limits, Turnstile verification, persistence, and optional email notification. A report must be persisted before notification; notification failure must not erase accepted feedback.
 
 ## Data boundary
 
