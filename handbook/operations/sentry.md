@@ -25,7 +25,7 @@ If a sensitive field reaches Sentry, narrow or disable the affected capture path
 
 ## Configuration
 
-`mosaify-web` runtime variables are `VITE_SENTRY_DSN`, `VITE_SENTRY_ENVIRONMENT`, and `VITE_APP_RELEASE`. Source-map upload uses build-only `SENTRY_ORG`, `SENTRY_PROJECT`, and `SENTRY_AUTH_TOKEN`; the auth token must never use the `VITE_` prefix or enter a browser bundle. `mosaify-api` uses `SENTRY_DSN`, `SENTRY_ENVIRONMENT`, and `APP_RELEASE`.
+`mosaify-studio/apps/web` runtime variables are `VITE_SENTRY_DSN`, `VITE_SENTRY_ENVIRONMENT`, and `VITE_APP_RELEASE`. Source-map upload uses build-only `SENTRY_ORG`, `SENTRY_PROJECT`, and `SENTRY_AUTH_TOKEN`; the auth token must never use the `VITE_` prefix or enter a browser bundle. `mosaify-studio/apps/api` uses `SENTRY_DSN`, `SENTRY_ENVIRONMENT`, and `APP_RELEASE`.
 
 ## Retention, rollout, and rollback
 

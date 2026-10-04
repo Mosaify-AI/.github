@@ -4,7 +4,7 @@
 
 Pexels is an active provenance source for checked-in Gallery and starter media. Mosaify does not have a runtime Pexels API integration or Pexels credential in the audited repositories. Some seed/reference assets are also recorded as original AI-authored material; that provenance category is not a separate production service integration.
 
-`mosaify-api` owns the Gallery provenance schema/ledger and seed validation. `mosaify-web` owns the checked-in starter-media attribution record. Runtime delivery comes from Mosaify-controlled assets, not Pexels source URLs.
+`mosaify-studio/apps/api` owns the Gallery provenance schema/ledger and seed validation. `mosaify-studio/apps/web` owns the checked-in starter-media attribution record. Runtime delivery comes from Mosaify-controlled assets, not Pexels source URLs.
 
 ## Evidence and prohibited content
 

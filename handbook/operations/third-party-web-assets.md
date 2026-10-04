@@ -2,7 +2,7 @@
 
 ## Current state
 
-`mosaify-web` currently makes two unauthenticated browser-side asset requests that are separate from the API and telemetry systems:
+`mosaify-studio/apps/web` currently makes two unauthenticated browser-side asset requests that are separate from the API and telemetry systems:
 
 - Google Fonts CSS/font delivery for Space Grotesk and Plus Jakarta Sans;
 - Simple Icons CDN requests for technology/brand icons in a marketing animation.

@@ -4,7 +4,9 @@
 
 GitHub is active for source control, pull-request review, CI checks, releases, and the public organization profile. Jira is the authoritative planning, backlog, and work-tracking system; GitHub Issues and organization Projects are disabled.
 
-CI exists in `mosaify-workspace`, `mosaify-api`, `mosaify-web`, `mosaify-cli`, and archived `Ava`. `mosaify-mcp` and the public `.github` repository have no workflow checks.
+CI is owned by `mosaify-workspace`, `mosaify-studio`, `mosaify-platform`, `mosaify-cinema`, `mosaify-skills`, `mosaify-cli`, and active `Ava`. Studio checks and deploys its API, web, and MCP from one repository; Platform deploys its company and Accounts frontends. The public `.github` repository contains handbook and organization-profile content.
+
+The retired standalone API, web, and MCP repositories are not deployment owners. Their deployment workflows are disabled. Current workflows check out Studio or Platform, use immutable container images or direct Cloudflare Pages uploads, and retain cloud resource identities independently of the source repository names. Source-repository deletion must never remove ECR images, ECS services, Pages projects, databases, media, runtime secrets, or retained rollback artifacts.
 
 ## Data boundary
 

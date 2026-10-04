@@ -4,7 +4,7 @@
 
 Stripe supports checkout, subscriptions, top-up credits, Customer Portal sessions, signed webhooks, and authoritative billing reconciliation. The integration is merged and has sandbox evidence. Live-mode production enablement is not confirmed by public repository evidence.
 
-`mosaify-api` owns plan truth, Stripe API calls, webhook verification, idempotent settlement, and the credit ledger. `mosaify-web` may request a checkout or portal session and navigate to the returned provider-hosted URL; it does not handle card data.
+`mosaify-studio/apps/api` owns plan truth, Stripe API calls, webhook verification, idempotent settlement, and the credit ledger. `mosaify-studio/apps/web` may request a checkout or portal session and navigate to the returned provider-hosted URL; it does not handle card data.
 
 ## Data boundary
 

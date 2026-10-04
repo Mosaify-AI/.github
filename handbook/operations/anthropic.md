@@ -2,7 +2,7 @@
 
 ## Role and current state
 
-Anthropic is an active optional assistant path in the local `mosaify-cli` GUI when a user explicitly selects it. It is not a dependency of the browser application or `mosaify-api`, and no production deployment is evidenced. The local mock remains the CLI assistant default.
+Anthropic is an active optional assistant path in the local `mosaify-cli` GUI when a user explicitly selects it. It is not a dependency of the browser application or `mosaify-studio/apps/api`, and no production deployment is evidenced. The local mock remains the CLI assistant default.
 
 ## Data and credential boundary
 

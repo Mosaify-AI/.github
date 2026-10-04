@@ -2,7 +2,7 @@
 
 ## Role and current state
 
-BytePlus ModelArk is an active alternate direct Seedance video-provider path in `mosaify-api`, selected with `VIDEO_PROVIDER=seedance`. The default checked-in provider choice remains fal, and current production use of the direct BytePlus path is unconfirmed.
+BytePlus ModelArk is an active alternate direct Seedance video-provider path in `mosaify-studio/apps/api`, selected with `VIDEO_PROVIDER=seedance`. The default checked-in provider choice remains fal, and current production use of the direct BytePlus path is unconfirmed.
 
 ## Data boundary
 

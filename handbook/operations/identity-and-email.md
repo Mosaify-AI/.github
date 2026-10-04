@@ -4,7 +4,7 @@
 
 Mosaify has active merged support for first-party HttpOnly cookie sessions, email one-time codes, Google OAuth, and Sign in with Apple. The production OAuth credentials, SMTP vendor, and production enablement of each optional provider are unconfirmed.
 
-`mosaify-api` owns identity verification, session issuance, workspace grants, and authorization. `mosaify-web` presents only the providers the API reports as enabled.
+`mosaify-studio/apps/api` owns identity verification, session issuance, workspace grants, and authorization. `mosaify-studio/apps/web` presents only the providers the API reports as enabled.
 
 ## Data boundary
 
